@@ -6,7 +6,7 @@ const Details = () => {
     const [detailsData, setDetailsData] = useState();
     const data = useLoaderData();
     const {id} = useParams();
-    console.log(detailsData.category);
+   
 
    
    
@@ -30,13 +30,13 @@ const Details = () => {
   </div>
   <div className="p-6">
     <h6 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
-    {detailsData.category}
+    {detailsData?.category}
     </h6>
     <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-      {detailsData.name}
+      {detailsData?.name}
     </h4>
     <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-      {detailsData.details}
+      {detailsData?.details}
     </p>
     <a className="inline-block" href="#">
       <button

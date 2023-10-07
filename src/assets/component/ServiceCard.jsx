@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({cardData}) => {
+  console.log(cardData);
     const {id, image,name,short_details,price} = cardData
    
     return (
