@@ -5,7 +5,12 @@ const Navbar = () => {
   
     const navLink =   <>
 
-    <li><a href="">Home</a></li>
+    <li> <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-blue-700 font-bold" : ""
+            }
+          > Home</NavLink></li>
     <li><a href="">about</a></li>
     <li><a href="">service</a></li>
     </>

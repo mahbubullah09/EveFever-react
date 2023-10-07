@@ -14,9 +14,7 @@ const Slider = () => {
             <div className="hero-overlay bg-opacity-80"></div>
             <div className="hero-content text-center text-neutral-content">
               <div
-                className="max-w-md"
-                data-aos="fade-down"
-                data-aos-easing="linear"
+                data-aos="zoom-out-up"
               >
                
                   <h1 className="mb-5 text-5xl font-bold text-amber-500 ">
