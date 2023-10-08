@@ -34,7 +34,7 @@ const Servises = () => {
       <div className="flex justify-center flex-wrap items-center gap-4">
         <button className="hover:font-bold active:text-orange-700 focus:outline-none focus:bg-orange-700 focus:font-bold focus:ring-violet-300 rounded-lg  transform  transition duration-500 hover:scale-125 hover:bg-amber-500 py-2 px-4" onClick={handleAll}> All</button>
         <button className=" hover:font-bold active:text-orange-700 focus:outline-none focus:bg-orange-700 focus:font-bold focus:ring-violet-300 rounded-lg  transform  transition duration-500 hover:scale-125 hover:bg-amber-500 py-2 px-4" onClick={() => handleCategory("Wedding")}> Wedding</button>
-        <button className="hover:font-bold active:text-orange-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-lg  transform  transition duration-500 hover:scale-125 hover:bg-amber-500 py-2 px-4" onClick={() => handleCategory("Engagement")}>
+        <button className="hover:font-bold active:text-orange-700 focus:outline-none focus:bg-orange-700 focus:font-bold focus:ring-violet-300 rounded-lg  transform  transition duration-500 hover:scale-125 hover:bg-amber-500 py-2 px-4" onClick={() => handleCategory("Engagement")}>
           {" "}
           Engegement
         </button>
@@ -50,7 +50,7 @@ const Servises = () => {
       </div>
 
       {selectCategory ? (
-        <div>
+        <div className="">
           <h2 className="text-3xl font-bold text-center my-4">
             Result for &apos;
             <span className=" hover:font-bold text-deep-orange-500">{selectCategory}</span>&apos;
@@ -59,7 +59,7 @@ const Servises = () => {
       ) : (
         ""
       )}
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 my-4">
         {!selectCategory
           ? data.map((data) => (
               <ServiceCard key={data.id} cardData={data}></ServiceCard>

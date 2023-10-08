@@ -28,7 +28,7 @@ const ServiceCard = ({ cardData }) => {
         <div className="p-6 pt-0  bottom-1 absolute">
           <Link to={`/details/${id}`}>
             <button
-              className=" select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className=" select-none rounded-lg bg-[#E76F51] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none hover:text-black  select-none rounded-lg hover:font-bold active:text-orange-700 focus:outline-none focus:bg-orange-700 focus:font-bold focus:ring-violet-300   transform  transition duration-500 hover:scale-125 hover:bg-amber-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-Black shadow-md shadow-pink-500/20  hover:shadow-lg"
               type="button"
               data-ripple-light="true"
             >
