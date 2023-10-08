@@ -8,13 +8,13 @@ const Navbar = () => {
     <li> <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-blue-700 font-bold" : ""
+              isActive ? "text-black bg-blue-gray-50 font-extrabold border-b-8 border-brown-700 " : ""
             }
           > Home</NavLink></li>
     <li> <NavLink
             to="/services"
             className={({ isActive }) =>
-              isActive ? "text-blue-700 font-bold" : ""
+              isActive ? "text-black bg-blue-gray-50 font-extrabold border-b-8 border-brown-700 hover:font-bold " : ""
             }
           > Services</NavLink></li>
     <li><a href="">about</a></li>
