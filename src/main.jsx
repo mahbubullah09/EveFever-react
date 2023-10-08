@@ -7,6 +7,8 @@ import MainLayout from './layout/MainLayout.jsx'
 import Home from './assets/component/home'
 import Details from './assets/component/Details'
 import Servises from './assets/component/Servises'
+import Login from './assets/component/registration/Login'
+import SingUp from './assets/component/registration/SingUp'
 
 
 
@@ -14,14 +16,29 @@ import Servises from './assets/component/Servises'
 const myCreateRoute = createBrowserRouter([
   {
 
+    
+
   path: "/",
   element: <MainLayout></MainLayout> ,
+
+ 
+
 
   children:[
   {  
     path : '/',
     element: <Home></Home>,
     loader: () => fetch('/data.json')
+  },
+  {
+    path: "login",
+    element: <Login></Login>
+
+  },
+  {
+    path: '/singup',
+    element: <SingUp></SingUp>
+
   },
   {
     path: 'details/:id',
@@ -33,7 +50,8 @@ const myCreateRoute = createBrowserRouter([
     path:'/services',
     element: <Servises></Servises>,
     loader: () => fetch('/data.json')
-  }
+  },
+  
   ]
 }
 ]);

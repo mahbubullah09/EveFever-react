@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import Slider from "./Slider";
 import ServiceCard from "./ServiceCard";
 
-import { FaAudible, FaDrupal, FaEarlybirds, FaEmpire, FaEnvira, FaTeamspeak } from "react-icons/fa";
+
 import ChooseUs from "./ChooseUs";
 import Question from "./question";
 
@@ -15,7 +15,9 @@ const Home = () => {
 
       <div>
         <div className="text-center">
-          <h2 className="text-4xl font-bold my-8">Our <span className="text-[#E76F51]">Services</span></h2>
+          <h2 className="text-4xl font-bold my-8">
+            Our <span className="text-[#E76F51]">Services</span>
+          </h2>
         </div>
         <div className=" grid grid-cols-3 gap-4 my-6">
           {data.slice(0, 6).map((data) => (
@@ -39,10 +41,8 @@ const Home = () => {
 
         <ChooseUs></ChooseUs>
 
-       
-
         {/* question */}
-        
+
         <Question></Question>
       </div>
     </div>
