@@ -3,7 +3,9 @@ import Navbar from "../assets/component/Navbar";
 import Footer from "../assets/component/Footer";
 import { Toaster } from "react-hot-toast";
 
+
 const MainLayout = () => {
+
   return (
     <div>
       <div className="max-w-5xl mx-auto">

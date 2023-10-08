@@ -6,7 +6,9 @@ import ServiceCard from "./ServiceCard";
 import ChooseUs from "./ChooseUs";
 import Question from "./question";
 
+
 const Home = () => {
+ 
   const data = useLoaderData();
   console.log(data);
   return (

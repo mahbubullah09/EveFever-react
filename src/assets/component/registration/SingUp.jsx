@@ -1,10 +1,12 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Provider/authProvider";
 import toast from "react-hot-toast";
 
 const SingUp = () => {
-    const { user, createUser } = useContext(AuthContext);
+    const { user, createUser,handleUpdateProfile } = useContext(AuthContext);
+   
+    const navigate = useNavigate()
     console.log(user);
   const handleSingUp = (e) => {
     e.preventDefault();
@@ -24,9 +26,17 @@ const SingUp = () => {
 
     //create user
     createUser(email, pass)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error));
+    .then(res => {
+        handleUpdateProfile(name, img)
+            .then(() => {
+                toast.success('User created successfully');
+                navigate('/')
 
+            })
+    })
+    .catch(error => {
+        toast.error(error.message)
+    })
 
   };
 
