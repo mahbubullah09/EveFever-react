@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router-dom";
 
 
@@ -8,16 +9,56 @@ const Details = () => {
     const {id} = useParams();
    
 
+
+ 
    
    
 
     useEffect (()=>{
     const findData = data?.find(details => details.id == id)
     setDetailsData(findData);
+    
+
+
+
+
+
    
 
 }, [id, data])
+
+
+const handleBook= () => {
+
+  const donateItemArray = [];
+  const donateItem= JSON.parse(localStorage.getItem('Book'));
+  
+
+  if (!donateItem){
+      donateItemArray.push((detailsData))
+      localStorage.setItem('Book', JSON.stringify(donateItemArray))
+     toast.success("Booked Succesfull!");
+  }
+ 
+  else{
+
+      const isExist = donateItem.find(item => item.id ==id);
+      
+      if(!isExist){
+          donateItemArray.push(...donateItem,detailsData)
+          localStorage.setItem('Book', JSON.stringify(donateItemArray))
+         toast.success('Book Succesfully')
+
+      }
+      else{
+          toast.error("Already booked!");
+      }
+
     
+
+  }
+}
+
     return (
         <div>
           <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -39,7 +80,7 @@ const Details = () => {
       {detailsData?.details}
     </p>
     <a className="inline-block" href="#">
-      <button
+      <button onClick={handleBook}
         className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-pink-500 transition-all hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
       >

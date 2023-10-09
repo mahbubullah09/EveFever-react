@@ -11,12 +11,13 @@ import Login from "./assets/component/registration/Login";
 import SingUp from "./assets/component/registration/SingUp";
 import AuthProvider from "./Provider/authProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import ErrorPage from "./assets/component/registration/ErrorPage";
 
 const myCreateRoute = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
