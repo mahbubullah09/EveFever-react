@@ -25,6 +25,12 @@ const Navbar = () => {
               isActive ? "text-black bg-blue-gray-50 font-extrabold border-b-8 border-[#E76F51] hover:font-bold " : ""
             }
           > Services</NavLink></li>
+    <li> <NavLink
+            to='/bookedEvent'
+            className={({ isActive }) =>
+              isActive ? "text-black bg-blue-gray-50 font-extrabold border-b-8 border-[#E76F51] hover:font-bold " : ""
+            }
+          > Booked Event</NavLink></li>
     <li><a href="">about</a></li>
     <li><a href="">service</a></li>
     </>

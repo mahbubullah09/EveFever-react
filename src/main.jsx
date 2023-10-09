@@ -12,6 +12,7 @@ import SingUp from "./assets/component/registration/SingUp";
 import AuthProvider from "./Provider/authProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import ErrorPage from "./assets/component/registration/ErrorPage";
+import BookedEvent from "./assets/component/BookedEvent";
 
 const myCreateRoute = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const myCreateRoute = createBrowserRouter([
         path: "/services",
         element: <Servises></Servises>,
         loader: () => fetch("/data.json"),
+      },
+      {
+        path: '/bookedEvent',
+        element: <BookedEvent></BookedEvent>
       },
     ],
   },
