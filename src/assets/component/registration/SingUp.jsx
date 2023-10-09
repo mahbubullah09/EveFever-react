@@ -4,10 +4,10 @@ import { AuthContext } from "../../../Provider/authProvider";
 import toast from "react-hot-toast";
 
 const SingUp = () => {
-    const { user, createUser,handleUpdateProfile } = useContext(AuthContext);
-   
-    const navigate = useNavigate()
-    console.log(user);
+  const { user, createUser, handleUpdateProfile } = useContext(AuthContext);
+  const regex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+  const navigate = useNavigate();
+  console.log(user);
   const handleSingUp = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -18,28 +18,37 @@ const SingUp = () => {
     const email = form.get("email");
     const pass = form.get("password");
 
+    const hasCapitalLetter = /[A-Z]/.test(pass);
+    const hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(pass);
+
     if (pass.length < 6) {
       toast.error("Password must be at least 6 charecter!");
       return;
     }
-    console.log(name, img, email, pass);
+    else if (!hasCapitalLetter){
+        toast.error("password should contain atleast one number capital letter");
+        return
+    }
+    else if (!hasSpecialCharacter){
+        toast.error("password should contain atleast one number special Charecter");
+        return
+    }
+   
+   
 
     //create user
     createUser(email, pass)
-    .then(res => {
-        handleUpdateProfile(name, img)
-            .then(() => {
-                toast.success('User created successfully');
-                navigate('/')
+      .then((res) => {
+        handleUpdateProfile(name, img).then(() => {
+          toast.success("User created successfully");
+          navigate("/");
 
-                toast.success('Succesfully create account')
-
-            })
-    })
-    .catch(error => {
-        toast.error(error.message)
-    })
-
+          toast.success("Succesfully create account");
+        });
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
 
   return (
