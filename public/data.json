@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "",
+        "image": "https://i.ibb.co/m5mjHpd/Untitled.jpg",
         "name": "Destination wedding",
         "short_details": "A dreamy wedding in an exotic location. ",
         "details": "A destination wedding is a dream come true for couples seeking a unique and romantic way to tie the knot. Imagine exchanging vows on a pristine beach, amidst a picturesque mountain backdrop, or in a charming European village. The possibilities are endless, and your wedding can reflect your personal style and preferences. From selecting the perfect destination to arranging accommodations for your guests, our team specializes in creating unforgettable destination weddings that will be cherished for a lifetime. Say 'I do' in paradise!",
@@ -10,6 +10,7 @@
     },
     {
         "id": 2,
+        "image": "https://i.ibb.co/rs6PpYP/Untitled1.jpg",
         "name": "Vintage wedding",
         "short_details": "Timeless elegance and classic charm.",
         "details": "A vintage wedding is a celebration of timeless elegance and classic charm. Picture a wedding adorned with lace, vintage decor, and a touch of nostalgia that transports you and your guests to a bygone era. Our team specializes in creating vintage-inspired weddings that capture the essence of a different time while incorporating modern elements. From selecting the perfect vintage venue to sourcing period-appropriate decorations and attire, we will help you create a wedding that is both classic and unforgettable.",
@@ -18,14 +19,16 @@
     },
     {
         "id": 3,
-        "name": "Classic wedding",
-        "short_details": "Elegant and sophisticated celebrations.",
-        "details": "A classic wedding is a celebration of tradition and sophistication. It's the perfect choice for couples who appreciate timeless beauty and want to create a wedding that exudes elegance. Imagine a grand ballroom adorned with luxurious flowers, a stunning wedding gown, and a sense of grandeur that leaves a lasting impression. Our team specializes in curating classic weddings that pay homage to tradition while adding a touch of modern flair. We'll work with you to select the perfect venue, design exquisite decor, and create a wedding that reflects your vision of timeless romance.",
+        "image": "https://i.ibb.co/f4QkTy7/k.jpg",
+        "name": "Traditional wedding",
+        "short_details": "Honoring cultural customs and rituals.",
+        "details": "A traditional wedding is a timeless celebration that honors cultural customs, rituals, and family values. It is a vibrant and meaningful event that brings two families together to celebrate the union of a couple in a way that has been cherished for generations. In this narrative, we will explore the rich tapestry of traditions that make a traditional wedding a truly unforgettable experience. [Full 500-word description as provided in the previous response.",
         "category": "Wedding",
         "price": 14000
     },
     {
         "id": 4,
+        "image": "https://i.ibb.co/fMpGR70/282ddef9472e657924226795912b2503.jpg",
         "name": "Themed children's party",
         "short_details": "Magical and fun-filled parties for kids.",
         "details": "A themed children's party is the perfect way to make your child's special day truly magical. Whether your child is a fan of superheroes, princesses, or a specific movie, we can create a party that brings their dreams to life. From custom decorations to interactive activities and character appearances, our team will ensure that every detail is designed to delight and entertain young guests. Let us take care of planning, so you can focus on creating cherished memories with your child.",
@@ -34,6 +37,7 @@
     },
     {
         "id": 5,
+        "image": "https://i.ibb.co/p0dM12T/surprise-party-hero.jpg",
         "name": "Surprise birthday party",
         "short_details": "Plan a surprise celebration for a special birthday.",
         "details": "Surprise birthday parties are a wonderful way to show your love and appreciation for someone special. Keeping the celebration a secret adds an element of excitement and joy. Our team specializes in planning surprise parties that are filled with surprises, laughter, and heartfelt moments. From selecting a venue to coordinating the surprise reveal, we'll take care of every detail so you can focus on sharing in the joy and creating lasting memories.",
@@ -42,14 +46,16 @@
     },
     {
         "id": 6,
-        "name": "Milestone celebration",
-        "short_details": "Commemorate significant achievements and life events.",
-        "details": "Milestone celebrations are an opportunity to commemorate significant achievements and life events. Whether it's a graduation, retirement, or any other milestone, we'll help you create a memorable celebration that honors the journey and accomplishments of the guest of honor. Our team will work closely with you to plan every aspect of the event, from choosing a venue to designing personalized decorations and coordinating special moments. Celebrate in style and create lasting memories with your loved ones.",
+        "image": "https://i.ibb.co/xC0qgdy/lucas-law-m-J-EWs-Ozm-N4-unsplash.jpg",
+        "name": "Milestone birthday celebration",
+        "short_details": "Marking significant birthdays in style.",
+        "details": "Milestone birthdays deserve to be celebrated in style, whether it's a 30th, 40th, or beyond. Our dedicated team specializes in crafting milestone birthday celebrations that capture the significance of the occasion. We work closely with you to create an unforgettable experience that reflects the guest of honor's journey and aspirations. From elegant decor to heartfelt speeches and entertainment, we ensure that every detail aligns with your unique vision, making your milestone birthday celebration an extraordinary and joyous event.",
         "category": "Birthday Party",
         "price": 3000
     },
     {
         "id": 7,
+        "image": "https://i.ibb.co/7kjfGW0/Untitled3.jpg",
         "name": "Romantic getaway",
         "short_details": "Escape to a romantic paradise with your partner.",
         "details": "A romantic getaway is a perfect way to rekindle the flames of love and create unforgettable moments with your partner. Whether it's a honeymoon, anniversary, or a spontaneous trip to celebrate your love, we'll help you plan a romantic escape that caters to your desires. From selecting a dreamy destination to arranging intimate experiences, our team will ensure that your romantic getaway is filled with love, romance, and precious memories that you'll treasure forever.",
@@ -58,6 +64,7 @@
     },
     {
         "id": 8,
+        "image": "https://i.ibb.co/dM3QW5y/510773533-H-1024x700.webp",
         "name": "Surprise anniversary party",
         "short_details": "Plan a surprise celebration to honor a couple's enduring love.",
         "details": "Surprise anniversary parties are a heartfelt way to celebrate the enduring love of a special couple. Whether it's a milestone anniversary or just a token of appreciation, we'll help you plan a surprise celebration that touches the hearts of the honored couple. From choosing a meaningful venue to coordinating sentimental surprises and personalized decorations, our team will ensure that the anniversary party is a joyous and heartwarming occasion.",
@@ -66,6 +73,7 @@
     },
     {
         "id": 9,
+        "image": "https://i.ibb.co/yS7pKbk/Mc-Gill-Rose-Garden-Engagement-Session-Kevyn-Dixon-Photography-15.jpg",
         "name": "Garden engagement",
         "short_details": "Pop the question in a picturesque garden setting.",
         "details": "A garden engagement is a romantic way to start your journey toward marriage. Surrounded by the beauty of nature, you can pop the question in a serene and picturesque setting. Our team will help you plan the perfect garden engagement, from selecting a beautiful garden location to arranging romantic details like flowers, candles, and music. Create a moment that will be cherished forever as you say 'yes' to a lifetime of love.",
@@ -74,6 +82,7 @@
     },
     {
         "id": 10,
+        "image": "https://i.ibb.co/GxN49sr/Breathtaking-Destination-Engagement-Session-Diktat-Photography-3-600x400.jpg",
         "name": "Destination engagement",
         "short_details": "Propose in a breathtaking destination.",
         "details": "A destination engagement is a unique and adventurous way to start your journey toward marriage. Imagine getting down on one knee in a breathtaking location, surrounded by the beauty of nature or in a vibrant cityscape. Our team specializes in creating memorable destination engagements that cater to your desires. From selecting the perfect destination to arranging romantic surprises and capturing the moment, we'll make sure your engagement is an unforgettable adventure filled with love and excitement.",
@@ -82,6 +91,7 @@
     },
     {
         "id": 11,
+        "image": "https://i.ibb.co/sRcg0Qj/seo-retirement-party-ideas-013123.jpg",
         "name": "Retirement party",
         "short_details": "Celebrate a well-deserved retirement with friends and colleagues.",
         "details": "A retirement party is a special occasion to honor someone who has dedicated their career to hard work and dedication. It's a time to celebrate their achievements, look back on memorable moments, and wish them well in their retirement years. Our team specializes in planning retirement parties that strike the perfect balance between nostalgia and excitement. From choosing a venue that reflects the retiree's personality to organizing heartfelt speeches and entertaining activities, we'll ensure that the retirement party is a memorable send-off into a new chapter of life. Let us help you create a retirement celebration that the retiree will cherish forever.",

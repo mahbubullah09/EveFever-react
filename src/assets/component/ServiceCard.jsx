@@ -10,9 +10,10 @@ const ServiceCard = ({ cardData }) => {
         className=" relative h-[430px] col-span-  rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-4  "
         data-aos="zoom-in"
       >
-        <div className="relative mx-4 -mt-6 h-48 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+        <div className="relative mx-4 -mt-6 h-48 overflow-hidden rounded-xl  bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <img
-            src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+          className=" w-full h-full"
+            src={image}
             alt="img-blur-shadow"
           />
         </div>

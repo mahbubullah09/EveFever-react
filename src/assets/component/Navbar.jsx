@@ -1,9 +1,12 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/authProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+
+  const navigate = useNavigate()
+  console.log(navigate);
 
   const navLink = (
     <>
@@ -118,7 +121,7 @@ const Navbar = () => {
         <div className="navbar-end">
           {user?.email ? (
             <div className="flex flex-col items-center">
-              <div className="w-10 rounded-full">
+              <div className="w-9 rounded-full">
                 <img className="rounded-full" src={user.photoURL} alt="" />
               </div>
               <h2 className="mr-2">{user.displayName}</h2>

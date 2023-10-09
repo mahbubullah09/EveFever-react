@@ -4,7 +4,7 @@ const RecentWork = () => {
       <div className="my-4 relative flex w-full max-w-[80rem] flex-col md:flex-row  rounded-xl bg-blue-gray-50 bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0  w-full md:w-2/5  shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+            src="https://i.ibb.co/r7fcHC2/maxresdefault.jpg"
             alt="image"
             className="h-full w-full object-cover"
           />
@@ -32,23 +32,23 @@ const RecentWork = () => {
       <div className="my-4 relative flex w-full max-w-[80rem] flex-col md:flex-row  rounded-xl bg-blue-gray-50 bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0 w-full md:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+            src="https://i.ibb.co/P4vpNY5/1c044c548c9615c8fa565a3d57a57a3f.jpg"
             alt="image"
             className="h-full w-full object-cover"
           />
         </div>
         <div className="p-6">
-          <h2 className="card-title">Mehedi's birthday party </h2>
+          <h2 className="card-title">Shakib's birthday party </h2>
           <p>Event Planner: EveFever</p>
           <p>Photography: Chobi Ghor</p>
           <p>Venue: Dhaka</p>
           <p className="max-w-2xl">
-            Mehedi's 30th birthday party was an unforgettable bash at The Loft
+          Shakib's 30th birthday party was an unforgettable bash at The Loft
             Lounge. Friends and family gathered to celebrate this milestone. The
             venue was transformed into a vibrant space with colorful decorations
             and a photo booth. Party Snaps captured the fun and laughter
             throughout the night. Guests enjoyed delicious food and cocktails
-            while dancing to their favorite tunes. Mehedi's surprise of a live
+            while dancing to their favorite tunes.Shakib's surprise of a live
             band had everyone grooving on the dance floor. It was a night filled
             with laughter, great company, and memories to last a lifetime.
           </p>
@@ -58,7 +58,7 @@ const RecentWork = () => {
       <div className="my-4 relative flex w-full max-w-[80rem] flex-col md:flex-row  rounded-xl bg-blue-gray-50 bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0 w-full md:w-2/5  shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+            src="https://i.ibb.co/hMDrXZs/99492d1d3238c5978b4859aaa246b049.jpg"
             alt="image"
             className="h-full w-full object-cover"
           />
@@ -82,7 +82,7 @@ const RecentWork = () => {
       <div className="my-4 relative flex w-full max-w-[80rem] flex-col md:flex-row rounded-xl bg-blue-gray-50 bg-clip-border text-gray-700 shadow-md">
         <div className="relative m-0 w-full md:w-2/5  shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1471&amp;q=80"
+            src="https://i.ibb.co/vjWTH9X/party-wear-gown-dress-at-silver-jubliee-function-1280x853-M30-P.jpg"
             alt="image"
             className="h-full w-full object-cover"
           />
