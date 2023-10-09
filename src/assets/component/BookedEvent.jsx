@@ -6,7 +6,7 @@ const BookedEvent = () => {
     const [book, setBook] = useState([]);
     const [noData, setNodata] = useState();
     const [click, isClick] = useState(false);
-    const {user,loading} = useContext(AuthContext)
+    const {user} = useContext(AuthContext)
 
 
 

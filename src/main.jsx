@@ -13,6 +13,8 @@ import AuthProvider from "./Provider/authProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import ErrorPage from "./assets/component/registration/ErrorPage";
 import BookedEvent from "./assets/component/BookedEvent";
+import RecentWork from "./assets/component/RecentWork";
+import Profile from "./assets/component/Profile";
 
 const myCreateRoute = createBrowserRouter([
   {
@@ -35,9 +37,11 @@ const myCreateRoute = createBrowserRouter([
       },
       {
         path: "details/:id",
-        element: <PrivateRoute>
-          <Details></Details>
-        </PrivateRoute>,
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
         loader: () => fetch("/data.json"),
       },
       {
@@ -46,8 +50,24 @@ const myCreateRoute = createBrowserRouter([
         loader: () => fetch("/data.json"),
       },
       {
-        path: '/bookedEvent',
-        element: <BookedEvent></BookedEvent>
+        path: "/bookedEvent",
+        element: (
+          <PrivateRoute>
+            <BookedEvent></BookedEvent>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path:'/profile',
+        element: <PrivateRoute>
+          <Profile></Profile>
+        </PrivateRoute>
+      },
+      {
+        path: "/recentwork",
+        element: <PrivateRoute>
+          <RecentWork></RecentWork>
+        </PrivateRoute>,
       },
     ],
   },
