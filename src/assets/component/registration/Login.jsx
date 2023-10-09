@@ -1,14 +1,17 @@
 
 import SocialLogin from "./SocialLogin";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/authProvider";
 import toast from "react-hot-toast";
 
 const Login = () => {
+    const location = useLocation();
+    console.log(location);
+    const navigate = useNavigate();
 
     const {user,login} = useContext(AuthContext);
-    console.log(user);
+  
   const handleLogIn = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -25,7 +28,14 @@ const Login = () => {
     
     //login user
     login(email, password)
-      .then((res) => console.log(res))
+      .then((res) => {
+        toast.success('Succesfully logged in')
+
+        navigate(location?.state ? location.state : '/')
+
+
+    
+    })
       .catch((error) => console.log(error));
 
 

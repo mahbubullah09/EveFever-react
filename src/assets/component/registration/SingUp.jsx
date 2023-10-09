@@ -32,6 +32,8 @@ const SingUp = () => {
                 toast.success('User created successfully');
                 navigate('/')
 
+                toast.success('Succesfully create account')
+
             })
     })
     .catch(error => {
