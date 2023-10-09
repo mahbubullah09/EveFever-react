@@ -21,7 +21,7 @@ const Home = () => {
             Our <span className="text-[#E76F51]">Services</span>
           </h2>
         </div>
-        <div className=" grid grid-cols-3 gap-4 my-6">
+        <div className=" mx-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
           {data.slice(0, 6).map((data) => (
             <ServiceCard key={data.id} cardData={data}></ServiceCard>
           ))}

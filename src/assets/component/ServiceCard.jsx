@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaSackDollar } from "react-icons/fa6";
 
 const ServiceCard = ({ cardData }) => {
   console.log(cardData);
@@ -7,7 +8,7 @@ const ServiceCard = ({ cardData }) => {
   return (
     <div >
       <div
-        className=" relative h-[430px] col-span-  rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-4  "
+        className=" relative h-[410px]   rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mb-4  "
         data-aos="zoom-in"
       >
         <div className="relative mx-4 -mt-6 h-48 overflow-hidden rounded-xl  bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
@@ -21,10 +22,13 @@ const ServiceCard = ({ cardData }) => {
           <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             {name}
           </h5>
-          <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+          <p className=" text-blue-gray-500 font-bold block font-sans text-base my-2  ">
             {short_details}
           </p>
-          <p>{price}</p>
+          <div className="flex items-center gap-2">
+            <FaSackDollar></FaSackDollar>
+          <p>{price} BDT</p>
+          </div>
         </div>
         <div className="p-6 pt-0  bottom-1 absolute">
           <Link to={`/details/${id}`}>

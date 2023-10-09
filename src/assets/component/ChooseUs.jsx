@@ -10,16 +10,16 @@ import {
 const ChooseUs = () => {
   return (
     <div>
-      <div className="my-12">
+      <div className="my-12 mx-3">
         <div className="text-center ">
-          <h2 className="text-4xl font-bold text-black text-center my-8 mx-2 lg:mx-0">
+          <h2 className="  text-4xl font-bold text-black text-center my-8 mx-2 lg:mx-0">
             Why <span className="text-[#E76F51]">choose us</span>
           </h2>
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly flex-col md:flex-row gap-16">
           <div className="left ">
-            <div className="flex items-center justify-around gap-6 w-96 mb-6">
+            <div className="flex items-center justify-around gap-6  mb-6">
               <div className="text-4xl">
                 <FaAudible></FaAudible>
               </div>
@@ -37,7 +37,7 @@ const ChooseUs = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-around gap-6 w-96 mb-6">
+            <div className="flex items-center justify-around gap-6  mb-6">
               <div className="text-4xl">
                 <FaDrupal></FaDrupal>
               </div>
@@ -56,7 +56,7 @@ const ChooseUs = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-around gap-6 w-96">
+            <div className="flex items-center justify-around gap-6">
               <div className="text-4xl">
                 <FaEarlybirds></FaEarlybirds>
               </div>
@@ -77,7 +77,7 @@ const ChooseUs = () => {
           </div>
 
           <div className="right    ">
-            <div className="flex items-center justify-around gap-6 w-96 mb-6">
+            <div className="flex items-center justify-around gap-6  mb-6">
               <div className="text-4xl">
                 <FaEmpire></FaEmpire>
               </div>
@@ -96,7 +96,7 @@ const ChooseUs = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-around gap-6 w-96 mb-6">
+            <div className="flex items-center justify-around gap-6  mb-6">
               <div className="text-4xl">
                 <FaEnvira></FaEnvira>
               </div>
@@ -115,7 +115,7 @@ const ChooseUs = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-around gap-6 w-96">
+            <div className="flex items-center justify-around gap-6 ">
               <div className="text-4xl">
                 <FaTeamspeak></FaTeamspeak>
               </div>

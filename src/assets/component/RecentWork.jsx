@@ -14,7 +14,7 @@ const RecentWork = () => {
           <p>Event Planner: EveFever</p>
           <p>Photography: Evefever</p>
           <p>Venue: Hill</p>
-          <p className="max-w-2xl">
+          <p className="max-w-2xl text-sm md:text-base">
             Rafi and Tania's wedding was a beautiful celebration of love. Held
             at the elegant Grand Manor Ballroom, the event was nothing short of
             magical. The bride and groom exchanged vows surrounded by family and
