@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useLoaderData, useParams } from "react-router-dom";
+import { AuthContext } from "../../Provider/authProvider";
 
 
 const Details = () => {
     const [detailsData, setDetailsData] = useState();
     const data = useLoaderData();
     const {id} = useParams();
+
+    const {user} = useContext(AuthContext)
+    console.log(user?.email);
    
 
 
@@ -31,12 +35,12 @@ const Details = () => {
 const handleBook= () => {
 
   const donateItemArray = [];
-  const donateItem= JSON.parse(localStorage.getItem('Book'));
+  const donateItem= JSON.parse(localStorage.getItem((user?.email)));
   
 
   if (!donateItem){
       donateItemArray.push((detailsData))
-      localStorage.setItem('Book', JSON.stringify(donateItemArray))
+      localStorage.setItem((user?.email), JSON.stringify(donateItemArray))
      toast.success("Booked Succesfull!");
   }
  
@@ -46,7 +50,7 @@ const handleBook= () => {
       
       if(!isExist){
           donateItemArray.push(...donateItem,detailsData)
-          localStorage.setItem('Book', JSON.stringify(donateItemArray))
+          localStorage.setItem((user.email), JSON.stringify(donateItemArray))
          toast.success('Book Succesfully')
 
       }

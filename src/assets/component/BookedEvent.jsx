@@ -1,19 +1,29 @@
-import  { useEffect, useState } from 'react';
+import  { useContext, useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
+import { AuthContext } from '../../Provider/authProvider';
 
 const BookedEvent = () => {
     const [book, setBook] = useState([]);
     const [noData, setNodata] = useState();
     const [click, isClick] = useState(false);
+    const {user,loading} = useContext(AuthContext)
+
+
+
+    
+
   
   
     useEffect(() => {
-      const bookedItem = JSON.parse(localStorage.getItem("Book"));
-      if (bookedItem) {
-        setBook(bookedItem);
-      } else {
-        setNodata("No data found");
-      }
+        
+
+    const bookedItem = JSON.parse(localStorage.getItem(user?.email));
+    if (bookedItem) {
+      setBook(bookedItem);
+    } else {
+      setNodata("No data found");
+    }
+
     }, []);
   
   
